@@ -1,6 +1,4 @@
 import { MagnifyingGlass } from 'react-loader-spinner';
-// import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
-// import { Component } from 'react';
 import style from './Loader.module.css';
 
 export const Spinner = () => {
