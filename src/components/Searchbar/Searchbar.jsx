@@ -1,4 +1,3 @@
-// import { Component } from 'react';
 import style from './Searchbar.module.css';
 import toast, { Toaster } from 'react-hot-toast';
 import { BiSearchAlt } from 'react-icons/bi';
