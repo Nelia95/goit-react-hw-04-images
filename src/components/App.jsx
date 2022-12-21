@@ -10,7 +10,7 @@ export const App = () => {
   const [images, setImages] = useState([]);
   const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(false);
   const [page, setPage] = useState(1);
 
   useEffect(() => {
@@ -21,10 +21,7 @@ export const App = () => {
           console.log(images);
           setImages(prevImages => [...prevImages, ...images]);
         })
-        .catch(error => {
-          setError(error.message);
-          setIsLoading(false);
-        })
+        // .catch(() => setError(true), setIsLoading(false))
         .finally(() => setIsLoading(false));
     }
   }, [query, page]);
